@@ -1,0 +1,13 @@
+Anexos y articulos guias:
+
+	-https://www.kaggle.com/nsaravana/malware-detection -> Base de datos para los datos iniciales del malware
+	-https://arxiv.org/ftp/arxiv/papers/1403/1403.1011.pdf
+	-http://www.scielo.org.co/pdf/tecn/v18n42/v18n42a02.pdf
+	-https://pythonhosted.org/epigrass/intromodels.html
+	-https://introcs.cs.princeton.edu/java/94diffeq/
+
+Correcciones finales:
+
+	-Se hicieron correcciones en los sliders de los datos de entrada. Para los sliders del Gamma y Beta se hicieron ajustes para que el 		 valor de Gamma siempre fuera mayor al valor de Beta y así al correr los modelos no se generaran bifurcaciones.
+	-El horizonte de tiempo se volvío continuo con un gap de 0.5 horas y se acortó dicho valor ya que al realizar las pruebas se concluyó 		 que si el horizonte de tiempo era muy largo se empezaban a tener bifurcaciones.
+	-Se realizó una comparación entre el método de Leap Frog (Método con ecuaciones diferenciales finitas) y el método exacto permitiendo 	  	 así adquirir el error del modelo. Se añadió un nuevo boton en donde al presionarlo generaba una grafica con las curvas de cada modelo 		 realizado para así tener un mejor entendimiento del desfase y el error que producia el método de Leap Frog (LF) y el método exacto 		 (Exc). En el Excel adjunto se cogieron 18 puntos de las iteraciones realizadas para cada método. Los resultados se muestran 		 detalladamente en el Excel, en donde el error entre el método exacto y el método de Leap Frog fue del 3.24%. Mostrando que el método 		 es muy preciso y obtiene resultados casi iguales a los del método exacto.
